@@ -1,9 +1,11 @@
 import React from 'react'
+import headshot from "../images/headshot.png";
+
 
 const SideBar = () => {
     return (
-        <div>
-            Sidebar 
+        <div id="sidebar">
+            <img id = "headshot" src={headshot} />
         </div>
     )
 }

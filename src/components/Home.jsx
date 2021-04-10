@@ -22,8 +22,20 @@ const Home = () => {
 
 				<img class ="three-circles" src={threeCircles} />
 				<h3>CONTACT INFO</h3>
+				</div>
 
-			</div>
+				<div id="contact-info">
+					<div id ="left-side">
+						<h6>Email</h6>
+					</div>
+					<div id ="right-side"></div>
+					<h6>meganzinka@gmail.com</h6>
+
+
+
+				</div>
+
+
 		</div>
 	);
 };

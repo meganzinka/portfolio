@@ -39,3 +39,29 @@ body {
   margin: 0; 
 }
 
+#contact-info { 
+  display: grid; 
+  grid-template-columns: 49% 2% 49%; 
+}
+
+#left-side { 
+  text-align: right;
+  grid-column: 1; 
+}
+
+#right-side { 
+  text-align: left;
+  grid-column: 3; 
+}
+
+#sidebar {
+  display: grid; 
+  grid-template-rows: 15vw 15vw 15vw 15vw;
+}
+
+#headshot {
+  width: 75%;
+  border-radius: 5%; 
+  align-content:flex-end;
+  float: right;
+}
