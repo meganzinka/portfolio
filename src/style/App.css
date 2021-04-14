@@ -1,39 +1,62 @@
+
+#app-wrapper{
+  width: 100%;
+  height:100%;
+  margin: 0; 
+}
 #app-container { 
   display: grid; 
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 4fr; 
+  grid-template-columns: 0.5fr 1fr 4fr 1fr 0.5fr;
+  grid-template-rows: 1fr 7fr; 
 }
 
 #sidebar-container {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 2;
 }
 
 #main-container { 
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 2; 
-  background-color: white;
-  padding: 2vw;
-}
-
-#logo { 
-  grid-column: 1;
-  grid-row: 1;
+  background-color: #F9F9FB;
+    padding: 2vw;
+  border-radius: 4px;
 }
 
 body {
   font-family: Avenir;
-  background-color: gray; 
+  background-color: #E4E5EC;
+  color: #1A2F38;
 }
 
+/*-----Design Elements------*/
 .three-circles {
   height: 20px; 
 }
 
-.logo {
-  height: 30vh;
+.logo-big {
+  height: 50vh;
+  justify-self: center;
 }
+
 /*---------Home Page-----------*/ 
+#home-page { 
+  text-align: center;
+  /* background: url("./../images/Background.png"); */
+  width: 100vw;
+  height: 100vh; 
+}
+
+#home-page img {
+  /* width: 100%; */
+  height:100%; 
+}
+
+#home-page:hover {
+  cursor: pointer;
+}
+
+/*--------About Page--------*/
 .title {
   text-align: center;
   margin: 0; 
@@ -54,14 +77,68 @@ body {
   grid-column: 3; 
 }
 
+
+
+/*-------Sidebar-----------*/ 
 #sidebar {
   display: grid; 
-  grid-template-rows: 15vw 15vw 15vw 15vw;
+  grid-template-rows: 15vh 15vh 15vh 15vh;
 }
 
-#headshot {
-  width: 75%;
-  border-radius: 5%; 
-  align-content:flex-end;
+
+#sidebar-item-container {
+  width:75%;
   float: right;
+  color: white; 
+  justify-self: flex-end;
+  text-decoration: none;
+  border: 1px gray solid;
+  height:100%; 
+}
+#sidebar-item-container:hover { 
+  background-color: #E9C46A; 
+}
+#link {
+  text-decoration: none;
+
+}
+#headshot {
+  max-width: 100%;
+}
+
+/*---------Large Resume ----------*/
+#popup-wrapper {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+  box-shadow: 15px 20px 40px 0.5px rgb(0, 0, 0, 0.45);
+}
+
+#popup {
+  height: 90vh;
+  width: 90vw;
+  border-radius: 10px;
+  background-color: #edf6f9;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  backdrop-filter: brightness(60%);
+  backdrop-filter: contrast(40%);
+  backdrop-filter: drop-shadow(4px 4px 10px blue);
+  backdrop-filter: grayscale(30%);
+  backdrop-filter: hue-rotate(120deg);
+  backdrop-filter: invert(70%);
+  backdrop-filter: opacity(20%);
+  backdrop-filter: sepia(90%);
+  backdrop-filter: saturate(80%);
+  overflow: scroll;
+  box-shadow: 20px 30px 60px 0.5px rgb(0, 0, 0, 0.45);
 }
