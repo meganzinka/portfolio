@@ -12,24 +12,24 @@ const SideBar = () => {
 
 	return (
 		<div id="sidebar">
-			<div id="sidebar-item-container">
+			<div id ="photo-tile" className="sidebar-item-container">
 				<img id="headshot" src={headshot} />
 			</div>
 
 			<Link id="link" to="/about">
-				<div id="sidebar-item-container">
+				<div className="sidebar-item-container">
 					<h3>About Me</h3>
 				</div>
 			</Link>
 
 			<Link id="link" to="/resume">
-				<div id="sidebar-item-container">
+				<div className="sidebar-item-container">
 					<h3>Resume</h3>
 				</div>
 			</Link>
 
 			<Link id="link" to="/projects">
-				<div id="sidebar-item-container">
+				<div id = "bottom-tile" className="sidebar-item-container">
 					<h3>Projects</h3>
 				</div>
 			</Link>
