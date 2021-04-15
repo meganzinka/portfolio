@@ -1,9 +1,9 @@
-import './style/App.css';
-import SideBar from './components/SideBar';
-import Home from './components/Home';
-import Resume from './components/Resume';
-import Projects from './components/Projects';
-import About from "./components/About"
+import "./style/App.css";
+import SideBar from "./components/SideBar";
+import Home from "./components/Home";
+import Resume from "./components/Resume";
+import Projects from "./components/Projects";
+import About from "./components/About";
 import { Route, Switch } from "react-router-dom";
 import {useState, useEffect} from "react"
 
