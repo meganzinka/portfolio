@@ -8,7 +8,7 @@ import { Route, Switch } from "react-router-dom";
 import {useState, useEffect} from "react"
 
 function App() {
-const [showLanding, setShowLanding] = useState(false)
+const [showLanding, setShowLanding] = useState(true)
 
 
 return (
